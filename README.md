@@ -136,6 +136,31 @@ MAX_NEW_TOKENS = 512                      # Maximum response length
 # API Configuration  
 BASE_URL = "http://localhost:8000/"       # Backend API endpoint
 ```
+## Testing 
+This project includes comprehensive test suites for both the frontend (Streamlit) and backend (FastAPI) components to ensure code quality and reliability.
+Prerequisites
+Before running tests, ensure you have the following dependencies installed:
+## Running Tests
+### Run All Tests
+To run all tests in the project:
+```bash
+pytest
+```
+Run Frontend Tests Only
+```bash
+pytest test_frontend.py -v
+```
+Run Backend Tests Only
+```bash
+pytest test_backend.py -v
+```
+
+
+## Test Coverage
+Generate Coverage Report
+```bash
+pytest --cov=. --cov-report=html
+```
 
 ## How It Works
 
