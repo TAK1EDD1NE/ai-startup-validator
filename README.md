@@ -1,6 +1,6 @@
-# VettIQ - Startup Idea Validation Tool
+# ai-startup-validator - Startup Idea Validation Tool
 
-A comprehensive AI-powered platform that validates startup ideas through intelligent market analysis, competitor research, risk assessment, and strategic advice. Built with FastAPI backend and Streamlit frontend, VettIQ uses LangGraph workflows and advanced language models to provide data-driven insights for entrepreneurs.
+A comprehensive AI-powered platform that validates startup ideas through intelligent market analysis, competitor research, risk assessment, and strategic advice. Built with FastAPI backend and Streamlit frontend, ai-startup-validator uses LangGraph workflows and advanced language models to provide data-driven insights for entrepreneurs.
 
 ## Features
 
@@ -14,7 +14,7 @@ A comprehensive AI-powered platform that validates startup ideas through intelli
 
 ##  Architecture
 
-VettIQ follows a modular microservices architecture with clear separation of concerns:
+ai-startup-validator follows a modular microservices architecture with clear separation of concerns:
 
 ```
 ├── main.py                     # FastAPI backend server
@@ -50,8 +50,8 @@ VettIQ follows a modular microservices architecture with clear separation of con
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Nirikshan95/VettIQ.git
-cd VettIQ
+git clone https://github.com/TAK1EDD1NE/ai-startup-validator.git
+cd ai-startup-validator
 ```
 
 ### 2. Set Up Python Environment
@@ -85,7 +85,7 @@ HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_token_here
 
 ## Usage
 
-VettIQ requires running both the backend API and frontend interface:
+ai-startup-validator requires running both the backend API and frontend interface:
 
 ### Method 1: Manual Startup (Recommended for Development)
 
@@ -139,7 +139,7 @@ BASE_URL = "http://localhost:8000/"       # Backend API endpoint
 
 ## How It Works
 
-VettIQ employs a sophisticated multi-agent workflow:
+ai-startup-validator employs a sophisticated multi-agent workflow:
 
 1. **Input Processing**: User submits startup idea through Streamlit interface
 2. **Tools‑First Analysis Nodes**: Each analysis node (market, competition, risk) runs in tools mode by default and may emit a tool call (DuckDuckGo) when needed
@@ -204,7 +204,7 @@ Validates a startup idea through comprehensive analysis.
 
 ### Common Issues
 
-**"Unable to connect to the VettIQ API"**
+**"Unable to connect to the ai-startup-validator API"**
 - Ensure FastAPI backend is running on port 8000
 - Check firewall settings and port availability
 - Verify BASE_URL configuration in config.py
