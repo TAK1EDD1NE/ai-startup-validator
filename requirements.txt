@@ -10,3 +10,7 @@ pydantic
 python-dotenv
 requests
 langchain
+pytest 
+pytest-mock
+pytest-asyncio 
+httpx
